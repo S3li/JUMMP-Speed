@@ -1,0 +1,239 @@
+-- Cok Hawli Birisi Yapmış İsmide Selim'miş.
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local _40zplama = Instance.new("TextButton")
+local _100Speed = Instance.new("TextButton")
+local _75zplama = Instance.new("TextButton")
+local _50zplama = Instance.new("TextButton")
+local _200Speed = Instance.new("TextButton")
+local _150Speed = Instance.new("TextButton")
+local _200zplama = Instance.new("TextButton")
+local _150zplama = Instance.new("TextButton")
+local _100zplama = Instance.new("TextButton")
+local _75Speed = Instance.new("TextButton")
+local _50Speed = Instance.new("TextButton")
+local _40Speed = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+main.Position = UDim2.new(0.0830903798, 0, 0.60820049, 0)
+main.Size = UDim2.new(0, 500, 0, 323)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+title.Position = UDim2.new(0, 0, -0.00309597515, 0)
+title.Size = UDim2.new(0, 500, 0, 50)
+title.Font = Enum.Font.Arcade
+title.Text = "Hiz Ve Ziplama"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 55.000
+
+_40zplama.Name = "40zıplama"
+_40zplama.Parent = main
+_40zplama.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_40zplama.Position = UDim2.new(0, 0, 0.210931748, 0)
+_40zplama.Size = UDim2.new(0, 95, 0, 50)
+_40zplama.Font = Enum.Font.ArialBold
+_40zplama.Text = "40 JumpPower"
+_40zplama.TextColor3 = Color3.fromRGB(255, 255, 255)
+_40zplama.TextSize = 12.000
+_40zplama.MouseButton1Down:connect(function()
+local plr = game.Players.LocalPlayer
+plr.Character.Humanoid.JumpPower = 40
+end)
+
+_100Speed.Name = "100Speed"
+_100Speed.Parent = main
+_100Speed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_100Speed.Position = UDim2.new(0.810000062, 0, 0.210931733, 0)
+_100Speed.Size = UDim2.new(0, 95, 0, 50)
+_100Speed.Font = Enum.Font.ArialBold
+_100Speed.Text = "100 Speed"
+_100Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100Speed.TextSize = 14.000
+_100Speed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+_75zplama.Name = "75zıplama"
+_75zplama.Parent = main
+_75zplama.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_75zplama.Position = UDim2.new(0, 0, 0.734151542, 0)
+_75zplama.Size = UDim2.new(0, 95, 0, 50)
+_75zplama.Font = Enum.Font.ArialBold
+_75zplama.Text = "75 JumpPower"
+_75zplama.TextColor3 = Color3.fromRGB(255, 255, 255)
+_75zplama.TextSize = 14.000
+_75zplama.MouseButton1Down:connect(function()
+local plr = game.Players.LocalPlayer
+plr.Character.Humanoid.JumpPower = 75
+end)
+
+_50zplama.Name = "50zıplama"
+_50zplama.Parent = main
+_50zplama.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_50zplama.Position = UDim2.new(0, 0, 0.470993668, 0)
+_50zplama.Size = UDim2.new(0, 95, 0, 50)
+_50zplama.Font = Enum.Font.ArialBold
+_50zplama.Text = "50 JumpPower"
+_50zplama.TextColor3 = Color3.fromRGB(255, 255, 255)
+_50zplama.TextSize = 12.000
+_50zplama.MouseButton1Down:connect(function()
+local plr = game.Players.LocalPlayer
+plr.Character.Humanoid.JumpPower = 50
+end)
+
+_200Speed.Name = "200 Speed"
+_200Speed.Parent = main
+_200Speed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_200Speed.Position = UDim2.new(0.810000062, 0, 0.734151542, 0)
+_200Speed.Size = UDim2.new(0, 95, 0, 50)
+_200Speed.Font = Enum.Font.ArialBold
+_200Speed.Text = "200 Speed"
+_200Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+_200Speed.TextSize = 14.000
+_200Speed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+end)
+
+_150Speed.Name = "150Speed"
+_150Speed.Parent = main
+_150Speed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_150Speed.Position = UDim2.new(0.810000062, 0, 0.470993638, 0)
+_150Speed.Size = UDim2.new(0, 95, 0, 50)
+_150Speed.Font = Enum.Font.ArialBold
+_150Speed.Text = "150 Speed"
+_150Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+_150Speed.TextSize = 14.000
+_150Speed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+end)
+
+_200zplama.Name = "200zıplama"
+_200zplama.Parent = main
+_200zplama.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_200zplama.Position = UDim2.new(0.280000091, 0, 0.734151542, 0)
+_200zplama.Size = UDim2.new(0, 95, 0, 50)
+_200zplama.Font = Enum.Font.ArialBold
+_200zplama.Text = "200 JumpPower"
+_200zplama.TextColor3 = Color3.fromRGB(255, 255, 255)
+_200zplama.TextSize = 14.000
+_200zplama.MouseButton1Down:connect(function()
+local plr = game.Players.LocalPlayer
+plr.Character.Humanoid.JumpPower = 200
+end)
+
+_150zplama.Name = "150zıplama"
+_150zplama.Parent = main
+_150zplama.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_150zplama.Position = UDim2.new(0.280000091, 0, 0.470993638, 0)
+_150zplama.Size = UDim2.new(0, 95, 0, 50)
+_150zplama.Font = Enum.Font.ArialBold
+_150zplama.Text = "150 JumpPower"
+_150zplama.TextColor3 = Color3.fromRGB(255, 255, 255)
+_150zplama.TextSize = 14.000
+_150zplama.MouseButton1Down:connect(function()
+local plr = game.Players.LocalPlayer
+plr.Character.Humanoid.JumpPower = 150
+end)
+
+_100zplama.Name = "100zıplama"
+_100zplama.Parent = main
+_100zplama.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_100zplama.Position = UDim2.new(0.280000091, 0, 0.210931733, 0)
+_100zplama.Size = UDim2.new(0, 95, 0, 50)
+_100zplama.Font = Enum.Font.ArialBold
+_100zplama.Text = "100 JumpPower"
+_100zplama.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100zplama.TextSize = 14.000
+_100zplama.MouseButton1Down:connect(function()
+local plr = game.Players.LocalPlayer
+plr.Character.Humanoid.JumpPower = 100
+end)
+
+_75Speed.Name = "75Speed"
+_75Speed.Parent = main
+_75Speed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_75Speed.Position = UDim2.new(0.548000097, 0, 0.734151542, 0)
+_75Speed.Size = UDim2.new(0, 95, 0, 50)
+_75Speed.Font = Enum.Font.ArialBold
+_75Speed.Text = "75 Speed"
+_75Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+_75Speed.TextSize = 14.000
+_75Speed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
+end)
+
+_50Speed.Name = "50Speed"
+_50Speed.Parent = main
+_50Speed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_50Speed.Position = UDim2.new(0.548000097, 0, 0.470993638, 0)
+_50Speed.Size = UDim2.new(0, 95, 0, 50)
+_50Speed.Font = Enum.Font.ArialBold
+_50Speed.Text = "50 Speed"
+_50Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+_50Speed.TextSize = 14.000
+_50Speed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
+
+_40Speed.Name = "40Speed"
+_40Speed.Parent = main
+_40Speed.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+_40Speed.Position = UDim2.new(0.548000097, 0, 0.210931733, 0)
+_40Speed.Size = UDim2.new(0, 95, 0, 50)
+_40Speed.Font = Enum.Font.ArialBold
+_40Speed.Text = "40 Speed"
+_40Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+_40Speed.TextSize = 14.000
+_40Speed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+end)
+
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+TextButton.Position = UDim2.new(0.934000015, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 33, 0, 50)
+TextButton.Font = Enum.Font.ArialBold
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextSize = 55.000
+TextButton.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmain.Position = UDim2.new(0.414723039, 0, -0.00113889575, 0)
+openmain.Size = UDim2.new(0, 100, 0, 31)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+open.Position = UDim2.new(0, 0, -1.23054747e-07, 0)
+open.Size = UDim2.new(0, 100, 0, 31)
+open.Font = Enum.Font.ArialBold
+open.Text = "Ac"
+open.TextColor3 = Color3.fromRGB(255, 255, 255)
+open.TextSize = 24.000
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
